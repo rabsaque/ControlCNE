@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>Documento sin título</title>
+<link href="../estilos/estilos.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+<!--
+.Estilo1 {font-size: 9px}
+-->
+</style></head>
+
+<center>
+  <h2>Registro de nuevo Empleado </h2>
+</center><br>
+<center><form action="../Controlador/RegistrarEmpleado.php" method="post">
+  <p align="center">
+    
+   &nbsp;&nbsp;  Nombre
+    :
+    <input type="text" name="nombre" id="textfield3" />
+  </p>
+
+  <p align="center">
+    <label for="textfield4"></label>
+    &nbsp;&nbsp;&nbsp;Apellido:
+    <input type="text" name="apellido" id="textfield4" />
+    <label for="textfield5"></label>
+  </p>
+  <p align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CI:
+    <input type="text" name="ci" id="textfield5" />
+    <label for="textfield6"></label>
+  </p>
+  <p align="center">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; Email:
+    <input type="text" name="email" id="textfield6" /><br>
+    Ej: correo@ejemplo.com</p>
+
+    <label for="textfield7"></label>
+    &nbsp;&nbsp;Telefono:
+    <input type="text" name="telefono" id="textfield7" />
+  </p>
+  <p align="center">
+    <label for="textarea">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dirección   </label>
+    <textarea name="direccion" id="textarea" cols="45" rows="5"></textarea>
+  </p>
+  <p align="center">
+    <label for="textfield8"></label>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Codigo:
+    <input type="text" name="codigo" id="textfield8" />
+  </p>
+  <p align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sexo:&nbsp;&nbsp;&nbsp;&nbsp;
+    <label for="select"></label>
+    <select name="sexo" id="select">
+    <option value="m">Masculino</option>
+    <option value="f">Femenino</option>
+    </select>
+  </p>
+   
+<p align="center">
+  <input type="submit" name="button" id="button" value="Registrar" />
+</p>
+  <p>&nbsp;</p>
+</form></center>
+</body>
+</html>

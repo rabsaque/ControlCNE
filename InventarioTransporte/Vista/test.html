@@ -1,0 +1,102 @@
+<html>
+
+<head>
+  <title></title>
+<script laguage="javascript">
+function activar(elemento)
+{
+
+if(elemento.universidad.options[elemento.universidad.selectedIndex].text=="Otros")
+  {
+    var textfield = document.createElement('Input');
+    textfield.setAttribute('type','text');  
+    elemento.appendChild(textfield);
+    document.getElementById("aparece").style.display = "inline";
+  }
+else
+  {
+     document.getElementById("aparece").style.display = "none";}
+  }
+function habilitar(form)
+{
+if(form.asistente.options[0].selected || form.asistente.options[2].selected==true)
+  {
+    form.universidad.disabled=true;
+   }
+else
+   {
+     form.universidad.disabled=false;
+   }
+}
+</script>
+
+</head>
+
+<body>
+
+<form >
+
+<table>
+  <tr>
+    <td>Tipo de Asistente</td>
+    <td colspan="3">
+      <select name="asistente" onChange="habilitar(this.form)">
+        <option value=" " selected="selected">[Seleccione]</option>
+        <option value="Universitario">Universitario</option>
+        <option value="Profesional">Profesional</option>
+      </select>
+    </td>
+  </tr>
+  <tr>
+    <td>Universidad</td>
+    <td>
+      <select name="universidad" onChange="activar(this.form)" disabled>
+        <option value=" " selected="selected">[Seleccione su opcion]</option>
+        <option value="JJJ">JJJ</option>
+        <option value="YYY">YYY</option>
+        <option value="ZZZ">ZZZ</option>
+        <option value=Otros">Otros</option>
+      </select>
+    </td>
+    <td id="aparece" style="display:none">Cual?</td>
+    <td id="aparece" style="display:none"><input type="text" name="otras" /></td>
+  </tr>
+</table>
+</form>
+</body>
+</html>
+
+
+
+
+
+  Proveedor
+        
+          <input name='prov' type='text' />
+        </p><p align="center">Fecha de la compra. DD-MM-AAAA </p>
+        <p align="center">
+          <label for="fechai"></label>
+          <input type="text" name="fechai" id="fechai" />
+        </p>
+      <<p align="center">Marca </p>
+        <p align="center">
+          <label for="marca"></label>
+          <input type="text" name="marca" id="marca" />
+        </p><p align="center">Modelo</p>
+        <p align="center">
+          <input name='mode' type='text' />
+        </p>
+      </p><<p align="center">Status</p>
+        
+          <label for="status"></label>
+          <label for="select"></label>
+          <select name="status" id="select">
+            <option>Ativo</option>
+            <option>Inactivo</option>
+          </select>
+       <p align="center">Numero de Solicitud</p>
+      
+          <input name='nums' type='text' />
+
+        <input name='enviar' type='submit' value='Registrar' />
+        <input name='limpiar' type='reset' value='Limpiar' /></td>
